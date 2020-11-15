@@ -1,0 +1,246 @@
+/*Mobile-first development*/
+/*Header and navigation bar style*/
+header {
+    margin-bottom: 40px;
+    font-family: sans-serif;
+    color: #264653;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+header h1 {
+    margin: 0;
+    padding-top: 10px;
+    font-size: 52px;
+    justify-content: flex-start;
+}
+
+header nav ul, .item ul {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    justify-content: center
+}
+
+header nav ul li a, .icon a {
+    color: #264563;
+    text-decoration: none;
+    margin: 0 20px 0 0;
+    font-size: 16px;
+}
+
+/*Font style*/
+
+h1, h2, h3, p, li, h4, h6 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h6 {
+    font-size: 16px;
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-size: 80px;
+    font-weight: 900;
+    margin: 0;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin: 0;
+}
+
+/*Image style*/
+.circle {
+    border-radius: 50%;
+    justify-content: center;
+}
+
+/*Introduction style rules*/
+.intro {
+    width: 320px;
+    padding: 10px;
+    background-color: #F4A261;
+    text-align: center;
+}
+
+/*About me page style rules*/
+
+/*Project page style rules*/
+#projects {
+    background-color: #F4A261;
+}
+
+button {
+    border-style: hidden;
+    border-radius: 12px;
+}
+
+.boxed {
+    display: flex;
+    flex-direction: row;
+    background: #ffffff;
+    height: 600px;
+    width: 400px;
+    align-content: flex-start;
+    margin: 30px;
+}
+
+/*Contact page*/
+.icon {
+    list-style: none;
+}
+
+
+form {
+    background-color: #F4A261;
+    border-color: #E76F51;
+}
+
+form label {
+    display: block;
+    font-size: 18px;
+    margin: 5px;
+    color: #000000;
+    font-family: arial;
+  }
+
+form input[type=text] {
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+form textarea {
+    height: 4.75rem;
+    width: 100%;
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+form input, form textarea {
+  width: 100%;
+}
+
+/*Using flexboxes*/
+.group, .project-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item {
+    flex: 1;
+    margin: 10px;
+}
+
+.item-double {
+    flex: 2;
+    margin: 10px;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+ /*Footer style*/
+footer {
+    background-color: #264653;
+    color: #ffffff;
+    margin: 0;
+    padding: 10px;
+    border: 0;
+}
+
+footer .item-2 {
+    text-align: end;
+}
+
+footer .group {
+    display: flex;
+    flex-direction: row;
+}
+
+footer i {
+    color: #ffffff;
+    margin-right: 0;
+    text-align: end;
+}
+
+
+/*Media query for computer/ large screen view*/
+@media all and (min-width: 800px) {
+    /*Header and nav*/
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+
+    header h1 {
+        margin: 14px 0;
+        padding: 0;
+    }
+
+    header nav {
+        margin: 18px;
+    }
+
+    header nav ul li a:hover, .icon a:hover {
+        color: #2A9D8F;
+    }
+
+    /*Flexboxes*/
+    .group {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .little-item {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+    }
+    
+    .item {
+        flex: 1;
+        margin: 10px;
+    }
+    
+    .item-double {
+        flex: 2;
+        margin: 10px;
+    }
+
+    .item-description {
+        flex: 2;
+        margin: 10px;
+    }
+
+    .item-image {
+        flex: 1;
+        margin: 10px;
+        border: 
+    }
+
+    .boxed {
+        display: flex;
+        flex-direction: row;
+        height: 350px;
+        width: 700px;
+        align-content: flex-start;
+        margin: 30px;
+    }
+
+    footer i:hover {
+        color: #2A9D8F;
+    }
+
+}
